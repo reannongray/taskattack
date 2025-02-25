@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/wave.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Task Attack - A beautiful themed task management application" />
+    <title>Task Attack 🌊</title>
+    
+    <!-- Theme handling for dark/light mode -->
+    <script>
+        // Check if user has a saved theme preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+    <!-- Notification handling -->
+    <script>
+        // Request notification permission on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            if ("Notification" in window) {
+                Notification.requestPermission();
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- App Container -->
+    <div id="root">
+        <!-- Navigation Bar -->
+        <nav class="nav-container">
+            <!-- Logo and Title -->
+            <div class="logo-section">
+                <!-- Will be replaced with React components -->
+            </div>
+
+            <!-- Theme Selector -->
+            <div class="theme-selector">
+                <!-- Ocean (default), Forest, Sunset, Moonlight, Aurora themes -->
+            </div>
+
+            <!-- Notification Center -->
+            <div class="notification-center">
+                <!-- Notification bell and counter -->
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-container">
+            <!-- Task Section -->
+            <section class="task-section">
+                <!-- Task Input Area -->
+                <div class="task-input">
+                    <!-- Task creation form -->
+                </div>
+
+                <!-- Task List -->
+                <div class="task-list">
+                    <!-- Task items with:
+                        - Checkbox for completion
+                        - Task text
+                        - Due date
+                        - Priority indicator
+                        - Color coding
+                        - Category
+                        - Edit/Delete options
+                    -->
+                </div>
+            </section>
+
+            <!-- Calendar Section -->
+            <section class="calendar-section">
+                <!-- 7-Day View -->
+                <div class="week-view">
+                    <!-- Next 7 days with task indicators -->
+                </div>
+
+                <!-- Full Calendar Modal -->
+                <div class="calendar-modal">
+                    <!-- Monthly calendar view -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Theme-specific Decoration Elements -->
+        <div class="theme-decorations">
+            <!-- Ocean theme: waves, bubbles -->
+            <!-- Forest theme: leaves, trees -->
+            <!-- Sunset theme: sun, clouds -->
+            <!-- Moonlight theme: stars, moon -->
+            <!-- Aurora theme: lights -->
+        </div>
+
+        <!-- Modals Container -->
+        <div class="modals-container">
+            <!-- Task Edit Modal -->
+            <!-- Calendar Full View Modal -->
+            <!-- Settings Modal -->
+            <!-- Theme Customization Modal -->
+        </div>
+
+        <!-- Notification Container -->
+        <div class="notification-container">
+            <!-- Toast notifications -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
