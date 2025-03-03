@@ -92,7 +92,8 @@ function Calendar({ theme, tasks, onDateSelect, selectedDate }) {
   const generateWeekKey = (week, index) => {
     const validDate = week.find(date => date && !date.empty);
     if (validDate) {
-      return `week-${validDate.getFullYear()}-${validDate.getMonth() + 1}`;
+      const firstDay = validDate.getDate();
+      return `week-${validDate.getFullYear()}-${validDate.getMonth() + 1}-${firstDay}`;
     }
     return `empty-week-${currentMonth.getFullYear()}-${currentMonth.getMonth()}-${index}`;
   };
