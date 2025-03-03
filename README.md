@@ -1,8 +1,6 @@
-# Task Attack 🌊
+Task Attack 🌊
 
 Task Attack is a visually appealing, theme-based task management application built with React, Tailwind CSS, and Vite. It features a beautiful, responsive interface with various ocean and nature-inspired themes.
-
-![Task Attack Screenshot](screenshot.png)
 
 ## Features
 
@@ -54,9 +52,14 @@ taskattack/
 │   │   ├── Calendar.jsx     # Calendar display component
 │   │   ├── Navbar.jsx       # Navigation bar with theme switcher
 │   │   ├── TaskList.jsx     # Task management component
+│   │   ├── TimelineView.jsx # Timeline visualization component
+│   │   ├── WeatherWidget.jsx # Current weather display
+│   │   ├── WeatherRecommendations.jsx # Weather-based task suggestions
 │   │   └── ThemeDecorations.jsx # Theme-specific visual elements
 │   ├── constants/
 │   │   └── themes.js        # Theme definitions
+│   ├── services/
+│   │   └── weatherService.js # Weather API integration
 │   └── main.jsx             # Application entry point
 └── public/
     └── wave.svg             # Task Attack logo
@@ -90,6 +93,7 @@ taskattack/
 
 ## Acknowledgments
 
-- Inspired by modern task management apps with a fresh ocean-themed twist
-- Created with a focus on visual appeal and user experience
-- Special thanks to the React and Tailwind CSS communities
+Inspired by modern task management apps with a fresh ocean-themed twist
+Created with a focus on visual appeal and user experience
+Weather data provided by Open-Meteo API
+Special thanks to the React and Tailwind CSS communities
