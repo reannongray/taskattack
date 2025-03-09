@@ -1,51 +1,46 @@
 Task Attack 🌊
 
 Task Attack is a visually appealing, theme-based task management application built with React, Tailwind CSS, and Vite. It features a beautiful, responsive interface with various ocean and nature-inspired themes.
+Live Demo
+Visit Task Attack Here
+Task Attack is now hosted at taskattack.reannoncodes.site!
+Features
 
-## Features
+📝 Create, complete, and delete tasks
+📅 Calendar view for task planning and organization
+🎨 Multiple themes (Ocean, Forest, Sunset, Moonlight, Aurora)
+🔍 Filter tasks by priority and completion status
+📱 Responsive design for all screen sizes
+🔔 Task count notifications
 
-- 📝 Create, complete, and delete tasks
-- 📅 Calendar view for task planning and organization
-- 🎨 Multiple themes (Ocean, Forest, Sunset, Moonlight, Aurora)
-- 🔍 Filter tasks by priority and completion status
-- 📱 Responsive design for all screen sizes
-- 🔔 Task count notifications
+Tech Stack
 
-## Tech Stack
+React
+Tailwind CSS
+Vite
+Lucide React Icons
+Lodash
 
-- React
-- Tailwind CSS
-- Vite
-- Lucide React Icons
-- Lodash
+Installation
 
-## Installation
+Clone the repository:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/reannongray/taskattack.git
+bashCopygit clone https://github.com/reannongray/taskattack.git
 cd taskattack
-```
 
-2. Install dependencies:
-```bash
-npm install
-```
+Install dependencies:
 
-3. Start the development server:
-```bash
-npm run dev
-```
+bashCopynpm install
 
-4. Build for production:
-```bash
-npm run build
-```
+Start the development server:
 
-## Project Structure
+bashCopynpm run dev
 
-```
-taskattack/
+Build for production:
+
+bashCopynpm run build
+Project Structure
+Copytaskattack/
 ├── src/
 │   ├── App.jsx              # Main application component
 │   ├── components/
@@ -63,35 +58,34 @@ taskattack/
 │   └── main.jsx             # Application entry point
 └── public/
     └── wave.svg             # Task Attack logo
-```
+Usage
 
-## Usage
+Add tasks with the input field at the top of the task list
+Select a priority level for each task
+Click on a calendar date to filter tasks for that day
+Use the theme switcher in the navbar to change the visual theme
+Toggle task completion by clicking the checkbox
+Delete tasks with the trash icon
 
-- Add tasks with the input field at the top of the task list
-- Select a priority level for each task
-- Click on a calendar date to filter tasks for that day
-- Use the theme switcher in the navbar to change the visual theme
-- Toggle task completion by clicking the checkbox
-- Delete tasks with the trash icon
+Themes
 
-## Themes
+🌊 Ocean - Calming blue tones with wave decorations
+🌲 Forest - Refreshing green tones inspired by forests
+🌅 Sunset - Warm orange and pink tones
+🌙 Moonlight - Elegant indigo and purple night theme
+✨ Aurora - Ethereal teal and emerald theme
 
-- 🌊 Ocean - Calming blue tones with wave decorations
-- 🌲 Forest - Refreshing green tones inspired by forests
-- 🌅 Sunset - Warm orange and pink tones 
-- 🌙 Moonlight - Elegant indigo and purple night theme
-- ✨ Aurora - Ethereal teal and emerald theme
+Deployment
+Task Attack is now deployed at taskattack.reannoncodes.site using a custom subdomain configuration.
+Contributing
 
-## Contributing
+Fork the repository
+Create your feature branch: git checkout -b feature/amazing-feature
+Commit your changes: git commit -m 'Add some amazing feature'
+Push to the branch: git push origin feature/amazing-feature
+Open a Pull Request
 
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add some amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-
-## Acknowledgments
+Acknowledgments
 
 Inspired by modern task management apps with a fresh ocean-themed twist
 Created with a focus on visual appeal and user experience
